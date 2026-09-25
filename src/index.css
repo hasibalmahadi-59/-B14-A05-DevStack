@@ -179,7 +179,8 @@ a {
   }
 
   .signin-btn {
-    display: none;
+    display: block;
+    font-size: 10px;
   }
 
   .signup-btn {

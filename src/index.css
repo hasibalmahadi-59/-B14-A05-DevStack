@@ -163,8 +163,27 @@ a {
   }
 
   .nav-inner {
-    min-height: 58px;
-  }
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+}
+
+.mobile-menu-btn {
+  grid-column: 1;
+}
+
+.brand {
+  margin: 0;
+  justify-self: center;
+  grid-column: 2;
+}
+
+.nav-actions {
+  grid-column: 3;
+  justify-self: end;
+  gap: 7px;
+}
 
   .mobile-menu-btn {
     display: flex;

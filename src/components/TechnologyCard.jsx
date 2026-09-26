@@ -8,8 +8,7 @@ function TechnologyCard({ technology, isAdded, onAdd }) {
     difficulty,
     badge,
   } = technology;
-
-  return (
+    return (
     <article className="technology-card">
       <div className="technology-card-top">
         <img
@@ -43,7 +42,6 @@ function TechnologyCard({ technology, isAdded, onAdd }) {
           {rating}
         </span>
       </div>
-
       <button
         className={`add-stack-btn ${isAdded ? "added" : ""}`}
         onClick={() => onAdd(technology)}
@@ -54,5 +52,4 @@ function TechnologyCard({ technology, isAdded, onAdd }) {
     </article>
   );
 }
-
 export default TechnologyCard;

@@ -18,10 +18,8 @@ function App() {
 
   // Loading state
   const [loading, setLoading] = useState(true);
-
-  // Load technology data from JSON
-  useEffect(() => {
-    fetch("/src/data/technologies.json")
+    useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/technologies.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load technologies");
@@ -41,13 +39,11 @@ function App() {
       });
   }, []);
 
-  // Add technology to stack
   const handleAddToStack = (technology) => {
     const alreadyAdded = stack.some(
       (item) => item.id === technology.id
     );
 
-    // Prevent duplicate technology
     if (alreadyAdded) {
       toast.warning(
         `${technology.name} is already in your stack.`
@@ -65,8 +61,6 @@ function App() {
       `${technology.name} added to your stack.`
     );
   };
-
-  // Remove one technology
   const handleRemoveFromStack = (id) => {
     const removedTechnology = stack.find(
       (item) => item.id === id
@@ -84,8 +78,6 @@ function App() {
       );
     }
   };
-
-  // Remove all technologies
   const handleRemoveAll = () => {
     if (stack.length === 0) {
       toast.info("Your stack is already empty.");

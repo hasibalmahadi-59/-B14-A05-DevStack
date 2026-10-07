@@ -4,9 +4,9 @@ import {
   ToastContainer,
 } from "react-toastify";
 
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import TechnologyCard from "./components/technologycard";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TechnologyCard from "./components/Technologycard";
 import YourStack from "./components/YourStack";
 import Footer from "./components/Footer";
 function App() {

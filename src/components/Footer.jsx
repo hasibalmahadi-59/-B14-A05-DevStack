@@ -3,10 +3,11 @@ function Footer() {
     <footer className="footer" id="contact">
       <div className="container">
         <div className="footer-top">
-          {/* Brand */}
+          {}
           <div className="footer-brand">
             <a href="#home" className="footer-logo">
-              <img src="/assets/logo-text.png" alt="Dev Stack" />
+              <img  src={`${import.meta.env.BASE_URL}assets/logo-text.png`}
+              alt="Dev Stack"/>
             </a>
 
             <p>
@@ -27,7 +28,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+          {}
           <div className="footer-column">
             <h3>Product</h3>
             <a href="#technologies">Technologies</a>
@@ -35,7 +36,7 @@ function Footer() {
             <a href="#home">Features</a>
           </div>
 
-          {/* Company */}
+          {}
           <div className="footer-column">
             <h3>Company</h3>
             <a href="#about">About</a>
@@ -43,7 +44,7 @@ function Footer() {
             <a href="#home">Careers</a>
           </div>
 
-          {/* Legal */}
+          {}
           <div className="footer-column">
             <h3>Legal</h3>
             <a href="#privacy">Privacy</a>

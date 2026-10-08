@@ -11,7 +11,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container nav-inner">
 
-        {/* Mobile Menu Button */}
+        {}
         <button
           className="mobile-menu-btn"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -22,12 +22,14 @@ function Navbar() {
           <span></span>
         </button>
 
-        {/* Logo */}
+        {}
         <a href="#home" className="brand" onClick={closeMenu}>
-          <img src="/assets/logo-text.png" alt="Dev Stack" />
-        </a>
+          <img
+          src={`${import.meta.env.BASE_URL}assets/logo-text.png`}
+          alt="Dev Stack" />
+          </a>
 
-        {/* Navigation */}
+        {}
         <nav className={`nav-links ${isMenuOpen ? "nav-open" : ""}`}>
           <a href="#home" className="active" onClick={closeMenu}>
             Home
@@ -50,7 +52,7 @@ function Navbar() {
           </a>
         </nav>
 
-        {/* Authentication Buttons */}
+        {}
         <div className="nav-actions">
           <button className="signin-btn">
             Sign In

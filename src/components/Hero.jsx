@@ -43,7 +43,7 @@ function Hero() {
 
         <div className="hero-image-wrapper">
           <img
-            src="/assets/banner-stack.png"
+            src={`${import.meta.env.BASE_URL}assets/banner-stack.png`}
             alt="Development technology stack"
             className="hero-image"
           />
